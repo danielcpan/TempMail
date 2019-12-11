@@ -1,4 +1,4 @@
-import { RESET_ERRORS } from '../constants/actionTypes';
+import { RESET_ERRORS } from './types';
 
 export const resetErrors = () => ({
   type: RESET_ERRORS,

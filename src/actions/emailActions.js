@@ -4,7 +4,7 @@ import {
   FETCH_EMAILS_REQUEST,
   FETCH_EMAILS_SUCCESS,
   FETCH_EMAILS_FAILURE,
-} from '../constants/actionTypes';
+} from './types';
 
 const { API_ROOT } = require('../config/config');
 

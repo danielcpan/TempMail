@@ -1,4 +1,4 @@
-import { RESET_ERRORS } from '../constants/actionTypes';
+import { RESET_ERRORS } from '../actions/types';
 
 export default (state = [], action) => { // eslint-disable-line no-unused-vars
   const { type, error } = action;
