@@ -6,6 +6,7 @@ export default (state = [], action) => { // eslint-disable-line no-unused-vars
   if (type === RESET_ERRORS) {
     return [];
   } if (error) {
+    console.warn(`REDUX ERROR: ${error}`)
     return [...state, error];
   }
 
