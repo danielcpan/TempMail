@@ -4,7 +4,7 @@ const callApiMiddleware = ({ dispatch, getState }) => next => async action => {
   const { 
     types, 
     callAPI, 
-    shouldCallAPI = () => true, 
+    isCached = () => true, 
     schema,
     payload = {}
   } = action;
@@ -28,7 +28,7 @@ const callApiMiddleware = ({ dispatch, getState }) => next => async action => {
     throw new Error('Expected schema to be present');
   }
 
-  if (!shouldCallAPI(getState())) return;
+  if (isCached(getState())) return;
 
   const [requestType, successType, failureType] = types;
 

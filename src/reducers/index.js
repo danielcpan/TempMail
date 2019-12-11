@@ -1,10 +1,8 @@
 import { combineReducers } from 'redux';
 import errorReducer from './errorReducer';
-import recipeReducer from './recipeReducer';
-import favoriteReducer from './favoriteReducer';
+import emailReducer from './emailReducer';
 
 export default combineReducers({
   errors: errorReducer,
-  recipes: recipeReducer,
-  favorites: favoriteReducer
+  emails: emailReducer,
 });
